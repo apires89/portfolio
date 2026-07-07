@@ -8,11 +8,39 @@
   <meta property="og:title" content="André Cabral Pires — Developer &amp; Teacher">
   <meta property="og:description" content="Full-stack developer in Lisbon building products at the intersection of AI, web apps, and data.">
   <meta property="og:type" content="website">
+  <!-- Swap for the final domain once DNS is live -->
+  <meta property="og:url" content="https://apires89.github.io/portfolio/">
+  <link rel="canonical" href="https://apires89.github.io/portfolio/">
+  <meta property="og:image" content="https://apires89.github.io/portfolio/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="pt_PT">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#FBFBF8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121614" media="(prefers-color-scheme: dark)">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2317604A'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' font-style='italic' fill='%23FBFBF8' text-anchor='middle'%3EAp%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&family=Archivo:wght@400;500;600&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "André Cabral Pires",
+    "jobTitle": "Full-stack Developer & Teacher",
+    "email": "mailto:andrecabralpires@gmail.com",
+    "url": "https://apires89.github.io/portfolio/",
+    "sameAs": [
+      "https://github.com/apires89",
+      "https://www.linkedin.com/in/apires89"
+    ],
+    "address": { "@type": "PostalAddress", "addressLocality": "Lisbon", "addressCountry": "PT" },
+    "knowsLanguage": ["pt-PT", "en", "es"]
+  }
+  </script>
 </head>
 <body>
 
@@ -117,7 +145,7 @@
       <article class="project reveal">
         <p class="project-year mono">2024</p>
         <div class="project-body">
-          <h3 class="project-title" data-en="Pai.pt" data-pt="Pai.pt">Pai.pt</h3>
+          <h3 class="project-title"><a href="https://pai.pt" rel="noopener"><span data-en="Pai.pt" data-pt="Pai.pt">Pai.pt</span><span class="title-arrow" aria-hidden="true">&#8599;</span></a></h3>
           <p class="project-desc" data-en="Full-stack development on Portugal's local-business directory, including a conversational assistant that turns everyday questions (&ldquo;I'm hungry&rdquo;) into structured searches, in natural European Portuguese." data-pt="Desenvolvimento full-stack no diretório de serviços pai.pt, incluindo um assistente conversacional que transforma perguntas do dia a dia («tenho fome») em pesquisas estruturadas, em português europeu natural.">Full-stack development on Portugal's local-business directory, including a conversational assistant that turns everyday questions (&ldquo;I'm hungry&rdquo;) into structured searches, in natural European Portuguese.</p>
           <p class="project-stack mono">Rails · LLM function calling · JSON APIs</p>
         </div>
@@ -126,7 +154,7 @@
       <article class="project reveal">
         <p class="project-year mono">2019&#8202;—&#8202;23</p>
         <div class="project-body">
-          <h3 class="project-title" data-en="Silver Swan Search" data-pt="Silver Swan Search">Silver Swan Search</h3>
+          <h3 class="project-title"><a href="https://www.silverswanrecruitment.com" rel="noopener"><span data-en="Silver Swan Search" data-pt="Silver Swan Search">Silver Swan Search</span><span class="title-arrow" aria-hidden="true">&#8599;</span></a></h3>
           <p class="project-desc" data-en="Full-stack development of the candidate-search companion app for a domestic-staffing recruitment agency." data-pt="Desenvolvimento full-stack da app de pesquisa de candidatos para uma agência de recrutamento de staff doméstico.">Full-stack development of the candidate-search companion app for a domestic-staffing recruitment agency.</p>
           <p class="project-stack mono">Rails · PostgreSQL</p>
         </div>
@@ -148,13 +176,19 @@
     </div>
   </section>
 
+  <!-- ============ TOOLBOX ============ -->
+  <section class="toolbox" id="toolbox">
+    <h2 class="section-title reveal" data-en="Toolbox" data-pt="Ferramentas">Toolbox</h2>
+    <p class="toolbox-list mono reveal">Ruby on Rails · Hotwire · PostgreSQL + pgvector · Python · TypeScript · Claude &amp; OpenAI APIs · Sidekiq · Stripe · Streamlit · Tailwind CSS · Heroku · AWS S3</p>
+  </section>
+
   <!-- ============ CONTACT ============ -->
   <footer class="contact" id="contact">
     <h2 class="contact-greeting reveal"><span data-en="Say hello." data-pt="Diz olá.">Say hello.</span></h2>
     <a class="contact-email reveal" href="mailto:andrecabralpires@gmail.com">andrecabralpires@gmail.com</a>
     <ul class="contact-links reveal">
-      <li><a href="https://github.com/apires89" rel="noopener">GitHub<span class="title-arrow" aria-hidden="true">&#8599;</span></a></li>
-      <li><a href="https://www.linkedin.com/in/apires89" rel="noopener">LinkedIn<span class="title-arrow" aria-hidden="true">&#8599;</span></a></li>
+      <li><a href="https://github.com/apires89" rel="me noopener">GitHub<span class="title-arrow" aria-hidden="true">&#8599;</span></a></li>
+      <li><a href="https://www.linkedin.com/in/apires89" rel="me noopener">LinkedIn<span class="title-arrow" aria-hidden="true">&#8599;</span></a></li>
     </ul>
     <p class="colophon mono">
       <span data-en="© 2026 André Cabral Pires — built by hand in Lisbon" data-pt="© 2026 André Cabral Pires — feito à mão em Lisboa">© 2026 André Cabral Pires — built by hand in Lisbon</span>

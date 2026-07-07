@@ -17,6 +17,22 @@
 
   --measure: 34rem;
   --gutter: clamp(1.25rem, 5vw, 4rem);
+
+  color-scheme: light;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --paper: #121614;
+    --ink: #EDEFEA;
+    --gator: #63C39E;
+    --gator-deep: #96D9BE;
+    --graphite: #9AA39D;
+    --mist: #1C2320;
+    --hairline: #262D28;
+
+    color-scheme: dark;
+  }
 }
 
 /* ============================================================
@@ -60,6 +76,11 @@ button:focus-visible {
 
 ul {
   list-style: none;
+}
+
+::selection {
+  background: var(--gator);
+  color: var(--paper);
 }
 
 .mono {
@@ -388,6 +409,20 @@ a:hover .title-arrow {
 }
 
 /* ============================================================
+   Toolbox
+   ============================================================ */
+.toolbox {
+  padding: clamp(3rem, 8vh, 5.5rem) 0;
+  border-top: 1px solid var(--hairline);
+}
+
+.toolbox-list {
+  color: var(--graphite);
+  line-height: 2.1;
+  max-width: 44rem;
+}
+
+/* ============================================================
    Contact / footer
    ============================================================ */
 .contact {
@@ -495,6 +530,53 @@ html.js .contact-email.reveal {
     padding-left: 0;
     border-top: 1px solid var(--gator);
     padding-top: 1.25rem;
+  }
+}
+
+/* ============================================================
+   Print — reads like a one-page CV
+   ============================================================ */
+@media print {
+  body {
+    max-width: none;
+    padding: 0;
+    font-size: 11pt;
+  }
+
+  .lang-toggle,
+  .masthead-nav,
+  .live-dot,
+  .title-arrow {
+    display: none;
+  }
+
+  html.js .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .hero {
+    padding: 1.5rem 0;
+  }
+
+  .featured {
+    background: none;
+    border: 1px solid var(--hairline);
+  }
+
+  .featured,
+  .project {
+    break-inside: avoid;
+  }
+
+  .featured-title a[href]::after,
+  .project-title a[href]::after,
+  .contact-links a[href]::after {
+    content: " — " attr(href);
+    font-family: var(--font-mono);
+    font-size: 0.7em;
+    color: var(--graphite);
   }
 }
 
